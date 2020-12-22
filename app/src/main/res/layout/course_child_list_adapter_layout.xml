@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/left_image"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/font_color_dark"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toRightOf="@+id/left_image"
+        app:layout_constraintTop_toTopOf="@+id/left_image" />
+
+    <TextView
+        android:id="@+id/learn_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3"
+        android:drawableLeft="@drawable/ic_people_count"
+        android:drawablePadding="@dimen/dp_2"
+        android:gravity="center_vertical"
+        android:textColor="@color/font_color_light"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintLeft_toLeftOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+    <TextView
+        android:id="@+id/good_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_like"
+        android:drawablePadding="@dimen/dp_2"
+        android:gravity="center_vertical"
+        android:textColor="@color/font_color_light"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintLeft_toRightOf="@+id/learn_num"
+        app:layout_constraintTop_toTopOf="@+id/learn_num"
+        android:layout_marginLeft="@dimen/dp_10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="@id/left_image"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/appThemeRed"
+        android:id="@+id/price"/>
+
+    <include layout="@layout/cut_line_gray"
+        app:layout_constraintTop_toBottomOf="@+id/left_image"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/right_image_itemView"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10">
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/cut_line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/right_image"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <ImageView
+        android:id="@+id/right_image"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_80"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+
+    <TextView
+        android:id="@+id/scan_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:drawableLeft="@drawable/ic_post_browser"
+        android:drawablePadding="@dimen/dp_3"
+        android:gravity="center"
+        android:text="人浏览"
+        android:textColor="@color/font_color_light"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@+id/right_image" />
+
+    <TextView
+        android:id="@+id/follow_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:drawableLeft="@drawable/ic_comment_gray"
+        android:drawablePadding="@dimen/dp_3"
+        android:gravity="center"
+        android:text="人跟踪"
+        android:textColor="@color/font_color_light"
+        app:layout_constraintLeft_toRightOf="@+id/scan_num"
+        app:layout_constraintTop_toBottomOf="@+id/right_image" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="2020"
+        android:textColor="@color/font_color_light"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_head"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:text="A"
+        android:textColor="#CCCCCC"
+        android:textSize="@dimen/sp_10" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_16"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="安徽省"
+        android:textColor="@color/city_name_un_selected"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

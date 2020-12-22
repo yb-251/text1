@@ -1,0 +1,2 @@
+include ':app', ':utils', ':frame10', ':datalibrary', ':pop'
+rootProject.name='text1'

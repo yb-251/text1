@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomTabLayout">
+        <attr name="num" format="integer"/>
+        <attr name="isContainContent" format="boolean"/>
+        <attr name="isChangeContentColor" format="boolean"/>
+        <attr name="default_show" format="integer"/>
+        <attr name="content_selected_color" format="color"/>
+        <attr name="content_unSelected_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoginTabView">
+        <attr name="mode"/>
+    </declare-styleable>
+    <attr name="mode" format="integer">
+        <enum name="account" value="1"/>
+        <enum name="all" value="2"/>
+        <enum name="verify" value="3"/>
+    </attr>
+
+    <declare-styleable name="BannerLayoutStyle">
+        <attr name="selectedIndicatorColor" format="color|reference" />
+        <attr name="unSelectedIndicatorColor" format="color|reference" />
+        <attr name="indicatorShape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+
+        <attr name="selectedIndicatorHeight" format="dimension|reference" />
+        <attr name="selectedIndicatorWidth" format="dimension|reference" />
+
+        <attr name="unSelectedIndicatorHeight" format="dimension|reference" />
+        <attr name="unSelectedIndicatorWidth" format="dimension|reference" />
+
+        <attr name="indicatorPosition" format="enum">
+            <enum name="centerBottom" value="0" />
+            <enum name="rightBottom" value="1" />
+            <enum name="leftBottom" value="2" />
+            <enum name="centerTop" value="3" />
+            <enum name="rightTop" value="4" />
+            <enum name="leftTop" value="5" />
+        </attr>
+
+        <attr name="indicatorSpace" format="dimension|reference" />
+        <attr name="indicatorMargin" format="dimension|reference" />
+        <attr name="autoPlayDuration" format="integer|reference" />
+        <attr name="scrollDuration" format="integer|reference" />
+        <attr name="isAutoPlay" format="boolean" />
+        <attr name="threeImage" format="boolean" />
+        <attr name="defaultImage" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundOrCircleImage">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="complete">完成</string>
+    <string name="main_page">主页</string>
+    <string name="course">课程</string>
+    <string name="VIP">VIP</string>
+    <string name="data">资料</string>
+    <string name="mine">我的</string>
+    <string name="search">搜索</string>
+
+ 
+</resources>

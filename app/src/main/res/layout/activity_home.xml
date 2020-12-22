@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appThemeColor"
+    tools:context=".view.activity.HomeActivity">
+
+    <TextView
+        android:id="@+id/subject_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/home_top_bg"
+        android:drawableLeft="@drawable/four_corner_white_icon"
+        android:drawableRight="@drawable/ic_arrow_down"
+        android:drawablePadding="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+        android:text="室内设计"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:src="@drawable/ic_qrcode_scan"
+        app:layout_constraintBottom_toBottomOf="@id/subject_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subject_content" />
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:src="@drawable/ic_home_msg"
+        app:layout_constraintBottom_toBottomOf="@id/subject_content"
+        app:layout_constraintRight_toLeftOf="@+id/scan"
+        app:layout_constraintTop_toTopOf="@+id/subject_content" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_tabView"
+        app:layout_constraintTop_toBottomOf="@+id/subject_content" />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_0"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/home_top_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/subject_content"
+        app:layout_constraintLeft_toRightOf="@+id/subject_content"
+        app:layout_constraintRight_toLeftOf="@+id/message"
+        app:layout_constraintTop_toTopOf="@+id/subject_content">
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/fangdajing"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <com.example.text1.view.customs.BottomTabLayout
+        android:id="@+id/bottom_tabView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:content_selected_color="@color/appThemeRed"
+        app:content_unSelected_color="@color/font_color_dark"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

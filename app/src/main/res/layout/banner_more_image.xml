@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_180"
+    android:paddingLeft="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/group"
+    android:orientation="horizontal">
+
+    <com.example.text1.view.customs.RoundOrCircleImage
+        android:id="@+id/first"
+        app:type="round"
+        app:borderRadius="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <com.example.text1.view.customs.RoundOrCircleImage
+        android:id="@+id/second"
+        app:borderRadius="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <com.example.text1.view.customs.RoundOrCircleImage
+        android:id="@+id/third"
+        app:borderRadius="@dimen/dp_6"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
